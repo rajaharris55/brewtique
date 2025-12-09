@@ -1,5 +1,3 @@
-@import "tailwindcss";
-
 @font-face {
   font-family: "Causten";
   src: url("./assets/fonts/Causten Regular.ttf") format("truetype");
@@ -14,7 +12,7 @@
   font-style: normal;
 }
 
-@theme {
+:root {
   --primary: #a41c1c; /* Deep Red */
   --secondary: #e6d8ca; /* Soft Beige */
   --tertiary: #710202; /* Dark Burgundy */
@@ -22,4 +20,8 @@
 
   --font-causten: "Causten", sans-serif;
   --font-loverine: "Loverine", serif;
+}
+
+* {
+  font-family: var(--font-causten);
 }
