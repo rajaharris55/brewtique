@@ -1,8 +1,25 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Causten";
+  src: url("./assets/fonts/Causten Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Loverine";
+  src: url("./assets/fonts/Loverine.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @theme {
   --primary: #a41c1c; /* Deep Red */
   --secondary: #e6d8ca; /* Soft Beige */
   --tertiary: #710202; /* Dark Burgundy */
   --gray-dark: #090907; /* Very Dark Gray */
+
+  --font-causten: "Causten", sans-serif;
+  --font-loverine: "Loverine", serif;
 }
