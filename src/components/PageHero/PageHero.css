@@ -1,0 +1,37 @@
+.page-hero {
+  background-image: url("/bg.jpeg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.page-hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-hero-title {
+  font-family: var(--font-loverine);
+  font-size: 3.5rem;
+  color: var(--tertiary);
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .page-hero {
+    padding: 2rem 1.5rem;
+  }
+
+  .page-hero-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-hero-title {
+    font-size: 2rem;
+  }
+}

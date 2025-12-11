@@ -1,17 +1,14 @@
 import "./App.css";
-import Hero from "./components/Hero/Hero";
-import Navbar from "./components/Navbar/Navbar";
-import Contact from "./components/Contact/Contact";
-import Footer from "./components/Footer/Footer";
+import { Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage/HomePage";
+import MenuPage from "./pages/MenuPage/MenuPage";
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Hero />
-      <Contact />
-      <Footer />
-    </div>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/menu" element={<MenuPage />} />
+    </Routes>
   );
 }
 
