@@ -1,6 +1,6 @@
 .navbar {
   position: relative;
-  background: var(--secondary);
+  background: var(--bg-cream);
   z-index: 999;
 
   .nav-content {
@@ -67,7 +67,7 @@
         top: 100%;
         left: 0;
         right: 0;
-        background: var(--secondary);
+        background: var(--bg-cream);
         width: 100%;
         padding: 20px 0;
         flex-direction: column;

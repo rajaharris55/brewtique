@@ -85,8 +85,6 @@
 .social-icons a:hover {
   background: var(--secondary);
   color: #3e2723;
-  border-color: var(--secondary);
-  box-shadow: 0 5px 15px rgba(230, 216, 202, 0.3);
 }
 
 .social-icons svg {
