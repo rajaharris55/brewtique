@@ -53,6 +53,21 @@
   gap: 2rem;
 }
 
+.category-block {
+  margin-bottom: 40px;
+}
+
+.category-title {
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: var(--font-loverine);
+  color: var(--primary);
+  text-decoration: underline;
+  margin: 20px 0 15px;
+  text-align: left;
+  padding-left: 12px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .menu-section {

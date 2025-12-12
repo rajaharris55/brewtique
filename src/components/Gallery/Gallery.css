@@ -58,6 +58,9 @@
 }
 
 @media (max-width: 767px) {
+  .gallery {
+    display: none;
+  }
   .gallery-title {
     font-size: 2rem;
   }

@@ -546,6 +546,7 @@ function MenuPage() {
 
       <section className="menu-section">
         <div className="menu-container">
+          {/* Category pills */}
           <div className="filter-pills">
             {categories.map((category) => (
               <button
@@ -560,17 +561,51 @@ function MenuPage() {
             ))}
           </div>
 
-          <div className="menu-grid">
-            {filteredItems.map((item) => (
-              <MenuItem
-                key={item.id}
-                name={item.name}
-                description={item.description}
-                price={item.price}
-                image={item.image}
-              />
-            ))}
-          </div>
+          {/* WHEN ALL IS SELECTED → Show grouped categories */}
+          {selectedCategory === "All" ? (
+            <>
+              {categories
+                .filter((cat) => cat !== "All") // Skip "All"
+                .map((category) => {
+                  const items = menuItems.filter(
+                    (item) => item.category === category
+                  );
+
+                  if (items.length === 0) return null;
+
+                  return (
+                    <div key={category} className="category-block">
+                      <h2 className="category-title">{category}</h2>
+
+                      <div className="menu-grid">
+                        {items.map((item) => (
+                          <MenuItem
+                            key={item.id}
+                            name={item.name}
+                            description={item.description}
+                            price={item.price}
+                            image={item.image}
+                          />
+                        ))}
+                      </div>
+                    </div>
+                  );
+                })}
+            </>
+          ) : (
+            // WHEN A CATEGORY IS SELECTED → Show filtered items normally
+            <div className="menu-grid">
+              {filteredItems.map((item) => (
+                <MenuItem
+                  key={item.id}
+                  name={item.name}
+                  description={item.description}
+                  price={item.price}
+                  image={item.image}
+                />
+              ))}
+            </div>
+          )}
         </div>
       </section>
 
