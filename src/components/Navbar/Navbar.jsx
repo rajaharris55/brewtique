@@ -1,6 +1,7 @@
 import "./Navbar.scss";
 import logo from "../../assets/brewtique.png";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -17,15 +18,17 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="nav-content">
-        <img src={logo} className="logo" />
+        <Link to="/">
+          <img src={logo} className="logo" />
+        </Link>
 
         <div className={`nav-links ${open ? "open" : ""}`}>
-          <a href="#" className="nav-link" onClick={() => setOpen(false)}>
+          <Link to="/" className="nav-link" onClick={() => setOpen(false)}>
             Home
-          </a>
-          <a href="#" className="nav-link" onClick={() => setOpen(false)}>
+          </Link>
+          <Link to="/menu" className="nav-link" onClick={() => setOpen(false)}>
             Menu
-          </a>
+          </Link>
           <a href="#" className="nav-link" onClick={() => setOpen(false)}>
             About
           </a>
