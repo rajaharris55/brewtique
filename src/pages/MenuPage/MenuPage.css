@@ -6,7 +6,7 @@
 
 .menu-section {
   flex: 1;
-  background: white;
+  background: var(--bg-cream);
   padding: 4rem 2rem;
 }
 
@@ -25,25 +25,26 @@
 
 .filter-pill {
   padding: 0.75rem 1.5rem;
-  border: 2px solid var(--secondary);
+  border: 2px solid var(--tertiary);
   background: white;
-  color: var(--gray-dark);
+  color: var(--tertiary);
   border-radius: 50px;
   font-family: var(--font-causten);
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .filter-pill:hover {
-  border-color: var(--primary);
-  color: var(--primary);
+  border-color: var(--tertiary);
+  background: var(--secondary);
+  color: var(--tertiary);
 }
 
 .filter-pill.active {
-  background: var(--primary);
-  border-color: var(--primary);
+  background: var(--tertiary);
+  border-color: var(--tertiary);
   color: white;
 }
 
@@ -61,8 +62,10 @@
   font-size: 3rem;
   font-weight: 500;
   font-family: var(--font-loverine);
-  color: var(--primary);
+  color: var(--tertiary);
   text-decoration: underline;
+  text-decoration-color: var(--secondary);
+  text-decoration-thickness: 3px;
   margin: 20px 0 15px;
   text-align: left;
   padding-left: 12px;

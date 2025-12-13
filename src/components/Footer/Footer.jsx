@@ -8,7 +8,7 @@ function Footer() {
       <div className="footer-content">
         <div className="footer-section">
           <h3 className="footer-brand">Brewtique</h3>
-          <p className="footer-tagline">Crafting moments, one cup at a time</p>
+          <p className="footer-tagline">Speciality coffee | Café</p>
         </div>
 
         <div className="footer-section">

@@ -25,14 +25,32 @@
         font-family: "Causten", sans-serif;
         font-size: 18px;
         font-weight: 500;
-        transition: all 0.3s ease;
         padding: 8px 16px;
         border-radius: 6px;
         color: var(--gray-dark);
+        position: relative;
+        transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 4px;
+          left: 16px;
+          right: 16px;
+          height: 2px;
+          background: var(--tertiary);
+          transform: scaleX(0);
+          transform-origin: left;
+          transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
 
         &:hover {
-          color: white;
-          background-color: var(--primary);
+          color: var(--tertiary);
+          background-color: rgba(230, 216, 202, 0.3);
+
+          &::after {
+            transform: scaleX(1);
+          }
         }
       }
     }

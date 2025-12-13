@@ -1,9 +1,10 @@
 .page-hero {
-  background-image: url("/bg.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("/bg.jpeg");
   background-size: cover;
-  background-position: bottom;
+  background-position: center center;
   background-repeat: no-repeat;
-  padding: 3rem 2rem;
+  padding: 5rem 2rem;
   text-align: center;
 }
 
